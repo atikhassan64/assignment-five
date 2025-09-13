@@ -75,6 +75,27 @@ document.getElementById('call-btn-one')
 
 
     })
+
+
+
+    // Copy button 1
+document.getElementById('copy-btn-one')
+    .addEventListener('click', function () {
+        const navCopy = document.getElementById('nav-copy');
+        const navCopyNumber = parseInt(document.getElementById('nav-copy').innerText);
+        console.log(navCopyNumber)
+        const hotlineNine = document.getElementById('hotline-one').innerText;
+        navigator.clipboard.writeText(hotlineNine).then(() => {
+            alert("Copied: " + hotlineNine)
+        })
+        const cardCopyOne = 1;
+        const result = navCopyNumber + cardCopyOne;
+
+        navCopy.innerText = result;
+    })
+
+
+
 // --------------------------------------------------------------
 
 // card-2
@@ -138,6 +159,26 @@ document.getElementById('call-btn-tow')
 
 
     })
+
+
+    // Copy button 2
+document.getElementById('copy-btn-two')
+    .addEventListener('click', function () {
+        const navCopy = document.getElementById('nav-copy');
+        const navCopyNumber = parseInt(document.getElementById('nav-copy').innerText);
+        console.log(navCopyNumber)
+        const hotlineNine = document.getElementById('hotline-two').innerText;
+        navigator.clipboard.writeText(hotlineNine).then(() => {
+            alert("Copied: " + hotlineNine)
+        })
+        const cardCopyOne = 1;
+        const result = navCopyNumber + cardCopyOne;
+
+        navCopy.innerText = result;
+    })
+
+
+
 // --------------------------------------------------------------
 
 // card-3
@@ -201,6 +242,26 @@ document.getElementById('call-btn-three')
 
 
     })
+
+
+    // Copy button 3
+document.getElementById('copy-btn-three')
+    .addEventListener('click', function () {
+        const navCopy = document.getElementById('nav-copy');
+        const navCopyNumber = parseInt(document.getElementById('nav-copy').innerText);
+        console.log(navCopyNumber)
+        const hotlineNine = document.getElementById('hotline-three').innerText;
+        navigator.clipboard.writeText(hotlineNine).then(() => {
+            alert("Copied: " + hotlineNine)
+        })
+        const cardCopyOne = 1;
+        const result = navCopyNumber + cardCopyOne;
+
+        navCopy.innerText = result;
+    })
+
+
+
 // --------------------------------------------------------------
 
 // card-4
@@ -263,6 +324,27 @@ document.getElementById('call-btn-four')
 
 
     })
+
+
+
+    // Copy button 4
+document.getElementById('copy-btn-four')
+    .addEventListener('click', function () {
+        const navCopy = document.getElementById('nav-copy');
+        const navCopyNumber = parseInt(document.getElementById('nav-copy').innerText);
+        console.log(navCopyNumber)
+        const hotlineNine = document.getElementById('hotline-four').innerText;
+        navigator.clipboard.writeText(hotlineNine).then(() => {
+            alert("Copied: " + hotlineNine)
+        })
+        const cardCopyOne = 1;
+        const result = navCopyNumber + cardCopyOne;
+
+        navCopy.innerText = result;
+    })
+
+
+
 // --------------------------------------------------------------
 
 // card-5
@@ -326,6 +408,27 @@ document.getElementById('call-btn-five')
 
 
     })
+
+
+
+    // Copy button 5
+document.getElementById('copy-btn-five')
+    .addEventListener('click', function () {
+        const navCopy = document.getElementById('nav-copy');
+        const navCopyNumber = parseInt(document.getElementById('nav-copy').innerText);
+        console.log(navCopyNumber)
+        const hotlineNine = document.getElementById('hotline-five').innerText;
+        navigator.clipboard.writeText(hotlineNine).then(() => {
+            alert("Copied: " + hotlineNine)
+        })
+        const cardCopyOne = 1;
+        const result = navCopyNumber + cardCopyOne;
+
+        navCopy.innerText = result;
+    })
+
+
+
 // --------------------------------------------------------------
 
 // card-6
@@ -389,6 +492,26 @@ document.getElementById('call-btn-six')
 
 
     })
+
+
+    // Copy button 6
+document.getElementById('copy-btn-six')
+    .addEventListener('click', function () {
+        const navCopy = document.getElementById('nav-copy');
+        const navCopyNumber = parseInt(document.getElementById('nav-copy').innerText);
+        console.log(navCopyNumber)
+        const hotlineNine = document.getElementById('hotline-six').innerText;
+        navigator.clipboard.writeText(hotlineNine).then(() => {
+            alert("Copied: " + hotlineNine)
+        })
+        const cardCopyOne = 1;
+        const result = navCopyNumber + cardCopyOne;
+
+        navCopy.innerText = result;
+    })
+
+
+
 // --------------------------------------------------------------
 
 // card-7
@@ -451,6 +574,26 @@ document.getElementById('call-btn-seven')
 
 
     })
+
+
+// Copy button 7
+document.getElementById('copy-btn-seven')
+    .addEventListener('click', function () {
+        const navCopy = document.getElementById('nav-copy');
+        const navCopyNumber = parseInt(document.getElementById('nav-copy').innerText);
+        console.log(navCopyNumber)
+        const hotlineNine = document.getElementById('hotline-seven').innerText;
+        navigator.clipboard.writeText(hotlineNine).then(() => {
+            alert("Copied: " + hotlineNine)
+        })
+        const cardCopyOne = 1;
+        const result = navCopyNumber + cardCopyOne;
+
+        navCopy.innerText = result;
+    })
+
+
+
 // --------------------------------------------------------------
 
 // card-8
@@ -513,6 +656,26 @@ document.getElementById('call-btn-eight')
 
 
     })
+
+
+
+
+// Copy button 8
+document.getElementById('copy-btn-eight')
+    .addEventListener('click', function () {
+        const navCopy = document.getElementById('nav-copy');
+        const navCopyNumber = parseInt(document.getElementById('nav-copy').innerText);
+        console.log(navCopyNumber)
+        const hotlineNine = document.getElementById('hotline-eight').innerText;
+        navigator.clipboard.writeText(hotlineNine).then(() => {
+            alert("Copied: " + hotlineNine)
+        })
+        const cardCopyOne = 1;
+        const result = navCopyNumber + cardCopyOne;
+
+        navCopy.innerText = result;
+    })
+
 // --------------------------------------------------------------
 
 // card-9
@@ -525,6 +688,22 @@ document.getElementById('card-heart-icon-nine')
         const result = navHeartNumber + cardHeartIconOne;
 
         navHeart.innerText = result;
+    })
+
+// Copy button - 9
+document.getElementById('copy-btn-nine')
+    .addEventListener('click', function () {
+        const navCopy = document.getElementById('nav-copy');
+        const navCopyNumber = parseInt(document.getElementById('nav-copy').innerText);
+        console.log(navCopyNumber)
+        const hotlineNine = document.getElementById('hotline-nine').innerText;
+        navigator.clipboard.writeText(hotlineNine).then(() => {
+            alert("Copied: " + hotlineNine)
+        })
+        const cardCopyOne = 1;
+        const result = navCopyNumber + cardCopyOne;
+
+        navCopy.innerText = result;
     })
 
 
@@ -590,8 +769,8 @@ document.getElementById('call-btn-nine')
 // This section for Clear button 
 
 document.getElementById('clear-btn')
-    .addEventListener('click', function(){
-        document.getElementById('history-container').style.display = "none";
-        historyData.style.display = "block";
-        
+    .addEventListener('click', function () {
+        const historyCon = document.getElementById('history-container');
+        historyCon.innerText = ""
+
     })
