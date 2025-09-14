@@ -1,36 +1,22 @@
-// Get element by Id innertext
 function getInnerText(id) {
     const getInner = document.getElementById(id).innerText;
     return getInner;
 }
-// Get element by Id Number value 
 function getNumber(id) {
     const getNumbers = parseInt(document.getElementById(id).innerText);
     return getNumbers;
 }
-
-// for all cards 
 const historyData = [];
-
-
-
-
-// card-1
-// heart 1 growth------------------------------------------
 document.getElementById('card-heart-icon-one')
     .addEventListener('click', function () {
         const navHeart = document.getElementById('nav-heart');
         const navHeartNumber = getNumber('nav-heart');
         const cardHeartIconOne = 1;
         const result = navHeartNumber + cardHeartIconOne;
-
         navHeart.innerText = result;
     })
-
-// call button-1
 document.getElementById('call-btn-one')
     .addEventListener('click', function () {
-
         const availableCoins = getNumber('available-coins')
         const chargeParCall = 20;
         const result = availableCoins - chargeParCall;
@@ -41,20 +27,14 @@ document.getElementById('call-btn-one')
         }
         document.getElementById('available-coins').innerText = result;
         alert('Calling National Emergency Service 999...')
-
-
         const historyValue = {
             name: "National Emergency Number",
             number: 999,
             date: new Date().toLocaleTimeString()
         }
-
         historyData.push(historyValue);
-
-        // history 
         const historyContainer = document.getElementById('history-container');
-        historyContainer.innerText = "";
-
+        // historyContainer.innerText = "";
         for (const data of historyData) {
             const div = document.createElement("div");
             div.innerHTML = `
@@ -68,17 +48,15 @@ document.getElementById('call-btn-one')
                         </div>
                     </div>
                 `
-
             historyContainer.appendChild(div);
+            return
         }
-
-
-
     })
-
-
-
-    // Copy button 1
+document.getElementById('clear-btn')
+    .addEventListener('click', function () {
+        const historyContainer = document.getElementById('history-container');
+        historyContainer.innerText = "";
+    })
 document.getElementById('copy-btn-one')
     .addEventListener('click', function () {
         const navCopy = document.getElementById('nav-copy');
@@ -90,31 +68,18 @@ document.getElementById('copy-btn-one')
         })
         const cardCopyOne = 1;
         const result = navCopyNumber + cardCopyOne;
-
         navCopy.innerText = result;
     })
-
-
-
-// --------------------------------------------------------------
-
-// card-2
-// heart 2 growth------------------------------------------
 document.getElementById('card-heart-icon-two')
     .addEventListener('click', function () {
         const navHeart = document.getElementById('nav-heart');
         const navHeartNumber = getNumber('nav-heart');
         const cardHeartIconOne = 1;
         const result = navHeartNumber + cardHeartIconOne;
-
         navHeart.innerText = result;
     })
-
-
-// call button-2
 document.getElementById('call-btn-tow')
     .addEventListener('click', function () {
-
         const availableCoins = getNumber('available-coins')
         const chargeParCall = 20;
         const result = availableCoins - chargeParCall;
@@ -125,20 +90,14 @@ document.getElementById('call-btn-tow')
         }
         document.getElementById('available-coins').innerText = result;
         alert('Calling Police Helpline Number 999...')
-
-
         const historyValue = {
             name: "Police Helpline Number",
             number: 999,
             date: new Date().toLocaleTimeString()
         }
-
         historyData.push(historyValue);
-
-        // history 
         const historyContainer = document.getElementById('history-container');
         historyContainer.innerText = "";
-
         for (const data of historyData) {
             const div = document.createElement("div");
             div.innerHTML = `
@@ -152,16 +111,10 @@ document.getElementById('call-btn-tow')
                         </div>
                     </div>
                 `
-
             historyContainer.appendChild(div);
+            return
         }
-
-
-
     })
-
-
-    // Copy button 2
 document.getElementById('copy-btn-two')
     .addEventListener('click', function () {
         const navCopy = document.getElementById('nav-copy');
@@ -173,55 +126,35 @@ document.getElementById('copy-btn-two')
         })
         const cardCopyOne = 1;
         const result = navCopyNumber + cardCopyOne;
-
         navCopy.innerText = result;
     })
-
-
-
-// --------------------------------------------------------------
-
-// card-3
-// heart 3 growth------------------------------------------
 document.getElementById('card-heart-icon-Three')
     .addEventListener('click', function () {
         const navHeart = document.getElementById('nav-heart');
         const navHeartNumber = getNumber('nav-heart');
         const cardHeartIconOne = 1;
         const result = navHeartNumber + cardHeartIconOne;
-
         navHeart.innerText = result;
     })
-
-
-// call button-3
 document.getElementById('call-btn-three')
     .addEventListener('click', function () {
-
         const availableCoins = getNumber('available-coins')
         const chargeParCall = 20;
         const result = availableCoins - chargeParCall;
-
         if (availableCoins < 20) {
             alert("You have no more coins");
             return
         }
         document.getElementById('available-coins').innerText = result;
         alert('Calling Fire Service Number 999...')
-
-
         const historyValue = {
             name: "Fire Service Number",
             number: 999,
             date: new Date().toLocaleTimeString()
         }
-
         historyData.push(historyValue);
-
-        // history 
         const historyContainer = document.getElementById('history-container');
         historyContainer.innerText = "";
-
         for (const data of historyData) {
             const div = document.createElement("div");
             div.innerHTML = `
@@ -235,16 +168,10 @@ document.getElementById('call-btn-three')
                         </div>
                     </div>
                 `
-
             historyContainer.appendChild(div);
+            return
         }
-
-
-
     })
-
-
-    // Copy button 3
 document.getElementById('copy-btn-three')
     .addEventListener('click', function () {
         const navCopy = document.getElementById('nav-copy');
@@ -256,54 +183,35 @@ document.getElementById('copy-btn-three')
         })
         const cardCopyOne = 1;
         const result = navCopyNumber + cardCopyOne;
-
         navCopy.innerText = result;
     })
-
-
-
-// --------------------------------------------------------------
-
-// card-4
-// heart 4 growth------------------------------------------
 document.getElementById('card-heart-icon-four')
     .addEventListener('click', function () {
         const navHeart = document.getElementById('nav-heart');
         const navHeartNumber = getNumber('nav-heart');
         const cardHeartIconOne = 1;
         const result = navHeartNumber + cardHeartIconOne;
-
         navHeart.innerText = result;
     })
-
-// call button-4
 document.getElementById('call-btn-four')
     .addEventListener('click', function () {
-
         const availableCoins = getNumber('available-coins')
         const chargeParCall = 20;
         const result = availableCoins - chargeParCall;
-
         if (availableCoins < 20) {
             alert("You have no more coins");
             return
         }
         document.getElementById('available-coins').innerText = result;
         alert('Calling Ambulance Service 1994-999999...')
-
-
         const historyValue = {
             name: "Ambulance Service",
             number: '1994-999999',
             date: new Date().toLocaleTimeString()
         }
-
         historyData.push(historyValue);
-
-        // history 
         const historyContainer = document.getElementById('history-container');
         historyContainer.innerText = "";
-
         for (const data of historyData) {
             const div = document.createElement("div");
             div.innerHTML = `
@@ -317,17 +225,10 @@ document.getElementById('call-btn-four')
                         </div>
                     </div>
                 `
-
             historyContainer.appendChild(div);
+            return
         }
-
-
-
     })
-
-
-
-    // Copy button 4
 document.getElementById('copy-btn-four')
     .addEventListener('click', function () {
         const navCopy = document.getElementById('nav-copy');
@@ -339,55 +240,35 @@ document.getElementById('copy-btn-four')
         })
         const cardCopyOne = 1;
         const result = navCopyNumber + cardCopyOne;
-
         navCopy.innerText = result;
     })
-
-
-
-// --------------------------------------------------------------
-
-// card-5
-// heart 5 growth------------------------------------------
 document.getElementById('card-heart-icon-five')
     .addEventListener('click', function () {
         const navHeart = document.getElementById('nav-heart');
         const navHeartNumber = getNumber('nav-heart');
         const cardHeartIconOne = 1;
         const result = navHeartNumber + cardHeartIconOne;
-
         navHeart.innerText = result;
     })
-
-
-// call button-5
 document.getElementById('call-btn-five')
     .addEventListener('click', function () {
-
         const availableCoins = getNumber('available-coins')
         const chargeParCall = 20;
         const result = availableCoins - chargeParCall;
-
         if (availableCoins < 20) {
             alert("You have no more coins");
             return
         }
         document.getElementById('available-coins').innerText = result;
         alert('Calling Women & Child Helpline 109...')
-
-
         const historyValue = {
             name: "Women & Child Helpline",
             number: 109,
             date: new Date().toLocaleTimeString()
         }
-
         historyData.push(historyValue);
-
-        // history 
         const historyContainer = document.getElementById('history-container');
         historyContainer.innerText = "";
-
         for (const data of historyData) {
             const div = document.createElement("div");
             div.innerHTML = `
@@ -401,17 +282,10 @@ document.getElementById('call-btn-five')
                         </div>
                     </div>
                 `
-
             historyContainer.appendChild(div);
+            return
         }
-
-
-
     })
-
-
-
-    // Copy button 5
 document.getElementById('copy-btn-five')
     .addEventListener('click', function () {
         const navCopy = document.getElementById('nav-copy');
@@ -423,55 +297,35 @@ document.getElementById('copy-btn-five')
         })
         const cardCopyOne = 1;
         const result = navCopyNumber + cardCopyOne;
-
         navCopy.innerText = result;
     })
-
-
-
-// --------------------------------------------------------------
-
-// card-6
-// heart 6 growth------------------------------------------
 document.getElementById('card-heart-icon-six')
     .addEventListener('click', function () {
         const navHeart = document.getElementById('nav-heart');
         const navHeartNumber = getNumber('nav-heart');
         const cardHeartIconOne = 1;
         const result = navHeartNumber + cardHeartIconOne;
-
         navHeart.innerText = result;
     })
-
-
-// call button-6
 document.getElementById('call-btn-six')
     .addEventListener('click', function () {
-
         const availableCoins = getNumber('available-coins')
         const chargeParCall = 20;
         const result = availableCoins - chargeParCall;
-
         if (availableCoins < 20) {
             alert("You have no more coins");
             return
         }
         document.getElementById('available-coins').innerText = result;
         alert('Calling Anti-Corruption Helpline 106...')
-
-
         const historyValue = {
             name: "Anti-Corruption Helpline",
             number: 106,
             date: new Date().toLocaleTimeString()
         }
-
         historyData.push(historyValue);
-
-        // history 
         const historyContainer = document.getElementById('history-container');
         historyContainer.innerText = "";
-
         for (const data of historyData) {
             const div = document.createElement("div");
             div.innerHTML = `
@@ -485,16 +339,10 @@ document.getElementById('call-btn-six')
                         </div>
                     </div>
                 `
-
             historyContainer.appendChild(div);
+            return
         }
-
-
-
     })
-
-
-    // Copy button 6
 document.getElementById('copy-btn-six')
     .addEventListener('click', function () {
         const navCopy = document.getElementById('nav-copy');
@@ -506,54 +354,35 @@ document.getElementById('copy-btn-six')
         })
         const cardCopyOne = 1;
         const result = navCopyNumber + cardCopyOne;
-
         navCopy.innerText = result;
     })
-
-
-
-// --------------------------------------------------------------
-
-// card-7
-// heart 7 growth------------------------------------------
 document.getElementById('card-heart-icon-seven')
     .addEventListener('click', function () {
         const navHeart = document.getElementById('nav-heart');
         const navHeartNumber = getNumber('nav-heart');
         const cardHeartIconOne = 1;
         const result = navHeartNumber + cardHeartIconOne;
-
         navHeart.innerText = result;
     })
-
-// call button-7
 document.getElementById('call-btn-seven')
     .addEventListener('click', function () {
-
         const availableCoins = getNumber('available-coins')
         const chargeParCall = 20;
         const result = availableCoins - chargeParCall;
-
         if (availableCoins < 20) {
             alert("You have no more coins");
             return
         }
         document.getElementById('available-coins').innerText = result;
         alert('Calling Electricity Outage 16216...')
-
-
         const historyValue = {
             name: "Electricity Outage",
             number: 16216,
             date: new Date().toLocaleTimeString()
         }
-
         historyData.push(historyValue);
-
-        // history 
         const historyContainer = document.getElementById('history-container');
         historyContainer.innerText = "";
-
         for (const data of historyData) {
             const div = document.createElement("div");
             div.innerHTML = `
@@ -567,16 +396,10 @@ document.getElementById('call-btn-seven')
                         </div>
                     </div>
                 `
-
             historyContainer.appendChild(div);
+            return
         }
-
-
-
     })
-
-
-// Copy button 7
 document.getElementById('copy-btn-seven')
     .addEventListener('click', function () {
         const navCopy = document.getElementById('nav-copy');
@@ -588,54 +411,35 @@ document.getElementById('copy-btn-seven')
         })
         const cardCopyOne = 1;
         const result = navCopyNumber + cardCopyOne;
-
         navCopy.innerText = result;
     })
-
-
-
-// --------------------------------------------------------------
-
-// card-8
-// heart 8 growth------------------------------------------
 document.getElementById('card-heart-icon-eignt')
     .addEventListener('click', function () {
         const navHeart = document.getElementById('nav-heart');
         const navHeartNumber = getNumber('nav-heart');
         const cardHeartIconOne = 1;
         const result = navHeartNumber + cardHeartIconOne;
-
         navHeart.innerText = result;
     })
-
-// call button-8
 document.getElementById('call-btn-eight')
     .addEventListener('click', function () {
-
         const availableCoins = getNumber('available-coins')
         const chargeParCall = 20;
         const result = availableCoins - chargeParCall;
-
         if (availableCoins < 20) {
             alert("You have no more coins");
             return
         }
         document.getElementById('available-coins').innerText = result;
         alert('Calling Brac Helpline 16445...')
-
-
         const historyValue = {
             name: "Brac Helpline",
             number: 16445,
             date: new Date().toLocaleTimeString()
         }
-
         historyData.push(historyValue);
-
-        // history 
         const historyContainer = document.getElementById('history-container');
         historyContainer.innerText = "";
-
         for (const data of historyData) {
             const div = document.createElement("div");
             div.innerHTML = `
@@ -649,18 +453,10 @@ document.getElementById('call-btn-eight')
                         </div>
                     </div>
                 `
-
             historyContainer.appendChild(div);
+            return
         }
-
-
-
     })
-
-
-
-
-// Copy button 8
 document.getElementById('copy-btn-eight')
     .addEventListener('click', function () {
         const navCopy = document.getElementById('nav-copy');
@@ -672,25 +468,16 @@ document.getElementById('copy-btn-eight')
         })
         const cardCopyOne = 1;
         const result = navCopyNumber + cardCopyOne;
-
         navCopy.innerText = result;
     })
-
-// --------------------------------------------------------------
-
-// card-9
-// heart 9 growth------------------------------------------
 document.getElementById('card-heart-icon-nine')
     .addEventListener('click', function () {
         const navHeart = document.getElementById('nav-heart');
         const navHeartNumber = getNumber('nav-heart');
         const cardHeartIconOne = 1;
         const result = navHeartNumber + cardHeartIconOne;
-
         navHeart.innerText = result;
     })
-
-// Copy button - 9
 document.getElementById('copy-btn-nine')
     .addEventListener('click', function () {
         const navCopy = document.getElementById('nav-copy');
@@ -702,39 +489,27 @@ document.getElementById('copy-btn-nine')
         })
         const cardCopyOne = 1;
         const result = navCopyNumber + cardCopyOne;
-
         navCopy.innerText = result;
     })
-
-
-// call button-9
 document.getElementById('call-btn-nine')
     .addEventListener('click', function () {
-
         const availableCoins = getNumber('available-coins')
         const chargeParCall = 20;
         const result = availableCoins - chargeParCall;
-
         if (availableCoins < 20) {
             alert("You have no more coins");
             return
         }
         document.getElementById('available-coins').innerText = result;
         alert('Calling Bangladesh Railway 163...')
-
-
         const historyValue = {
             name: "Bangladesh Railway",
             number: 163,
             date: new Date().toLocaleTimeString()
         }
-
         historyData.push(historyValue);
-
-        // history 
         const historyContainer = document.getElementById('history-container');
         historyContainer.innerText = "";
-
         for (const data of historyData) {
             const div = document.createElement("div");
             div.innerHTML = `
@@ -748,29 +523,7 @@ document.getElementById('call-btn-nine')
                         </div>
                     </div>
                 `
-
             historyContainer.appendChild(div);
+            return
         }
-
-
-
-    })
-// --------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-// This section for Clear button 
-
-document.getElementById('clear-btn')
-    .addEventListener('click', function () {
-        const historyCon = document.getElementById('history-container');
-        historyCon.innerText = ""
-
     })
